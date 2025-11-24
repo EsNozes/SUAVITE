@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Santo Amaro</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/carousel.css">
+    <link rel="stylesheet" href="CSS/_carousel-adjust.css">
+  </head>
+  <body class="page-grid">
+    <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">PI</h1>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#loja">Loja</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contato">Contato</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__cart">
+          <button class="cart__button" onclick="addToCart()">
+            <span class="cart__icon">&#128722;</span>
+            <span class="cart__count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="carousel-bar">
+      <div class="carousel-bar__text">
+        PROMOÇÃO BLACK FRIDAY, NA COMPRA DE 2 PERFUMES, RECEBA 50% DE DESCONTO
+        NO SEGUNDO.
+      </div>
+    </div>
+  
+      <!-- Carrossel unificado dos produtos de perfumaria -->
+      <section class="main__section">
+        <h2 class="main__title">Carrossel - Perfumaria</h2>
+        <div class="carousel" id="perfumeCarousel">
+          <button class="carousel__btn prev" aria-label="Anterior">‹</button>
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <!-- Cards (replicados a partir dos produtos) -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 1" class="product-img">
+                </div>
+                <div class="product-info">
+                  <h3>Produto 1</h3>
+                  <p>R$ 24,00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 2" class="product-img">
+                </div>
+                <div class="product-info">
+                  <h3>Produto 2</h3>
+                  <p>R$ 22,00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 3" class="product-img">
+                </div>
+                <div class="product-info">
+                  <h3>Produto 3</h3>
+                  <p>R$ 30,00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 4" class="product-img">
+                </div>
+                <div class="product-info">
+                  <h3>Produto 4</h3>
+                  <p>R$ 24,00</p>
+                </div>
+              </div>
+              <!-- Repete para ter scroll suficiente -->
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 5" class="product-img">
+                </div>
+                <div class="product-info">
+                  <h3>Produto 5</h3>
+                  <p>R$ 49,00</p>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 6" class="product-img">
+                </div>
+                <div class="product-info">
+                  <h3>Produto 6</h3>
+                  <p>R$ 39,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel__btn next" aria-label="Próximo">›</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2025 Projeto Santo Amaro</p>
+    </footer>
+    <script src="JAVASCRIPT/script.js"></script>
+  </body>
+</html>
