@@ -17,7 +17,7 @@
 }
 .header__container_logo {
     display: block;
-    max-height: 150px; /* mantém proporcional ao header */
+    max-height: 115px; /* mantém proporcional ao header */
     max-width: 100%;
     border-radius: 100%;
     width: auto;
@@ -125,6 +125,11 @@ body {
 
 /* Header base */
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     background: #fff;
     color: #222;
     padding: 32px 0 20px 0;
@@ -229,7 +234,6 @@ body {
 /* Espaçamento entre header e main */
 .main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
     padding: 40px 24px;
     max-width: 1200px;
@@ -301,21 +305,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Footer limpo */
-.footer {
-    background: #fff;
-    color: #222;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    width: 100%;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
-    border-top: 1px solid #eee;
-}
-.footer__text {
-    font-size: 1rem;
-    color: #222;
-}
 .perfume-types {
     display: flex;
     flex-direction: column;
@@ -330,4 +319,57 @@ body {
     font-weight: 500;
     margin-bottom: 24px;
     color: #222;
+}
+
+/* Grid section com classes específicas para grid-card */
+.grid-section {
+    width: 100% !important;
+}
+.conjunto-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.grid-card {    
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grid-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.grid-card__image {
+    margin-bottom: 16px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 4px;
+}
+.grid-card__img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.grid-card__info {
+    padding: 0;
+}
+.grid-card__info h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #222;
+    font-weight: 600;
+}
+.grid-card__info p {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 600;
 }

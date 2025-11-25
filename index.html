@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/carousel.css">
     <link rel="stylesheet" href="CSS/_carousel-adjust.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
   </head>
   <body class="page-grid">
     <header class="header">
@@ -43,7 +44,7 @@
       SOS.
       </div>
     </div>
-  
+    <main class="main"> 
       <!-- Carrossel unificado dos produtos de perfumaria -->
       <section class="main__section">
           <div class="carousel" id="perfumeCarousel">
@@ -54,7 +55,7 @@
               <!-- Cards (replicados a partir dos produtos) -->
               <div class="product-card">
                 <div class="product-image">
-                  <img src="IMG/sabonete liquido_ menta e eucalipto.jpeg" alt="Sabonete Líquido Menta e eucalipto" class="product-img">
+                  <img src="IMG/sabonete liquido_ menta e eucalipto.jpeg" alt="Sabonete Líquido Menta e eucalipto" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                   <h3>Sabonete Líquido Menta e Eucalipto</h3>
@@ -63,7 +64,7 @@
               </div>
               <div class="product-card">
                 <div class="product-image">
-                  <img src="IMG/sabonete liquido_ msaracuja e camomila.jpeg" alt="Sabonete Líquido Maracujá e Camomila" class="product-img">
+                  <img src="IMG/sabonete liquido_ msaracuja e camomila.jpeg" alt="Sabonete Líquido Maracujá e Camomila" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                   <h3>Sabonete Líquido Maracujá e Camomila</h3>
@@ -72,7 +73,7 @@
               </div>
               <div class="product-card">
                 <div class="product-image">
-                  <img src="IMG/hidratante_acai e gengibre.jpeg" alt="Creme Corporal Alecrim" class="product-img">
+                  <img src="IMG/hidratante_acai e gengibre.jpeg" alt="Creme Corporal Alecrim" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                   <h3>Creme Corporal Alecrim</h3>
@@ -81,7 +82,7 @@
               </div>
               <div class="product-card">
                 <div class="product-image">
-                  <img src="IMG/creme corporal_camomila.jpeg" alt="Creme Corporal Camomila" class="product-img">
+                  <img src="IMG/creme corporal_camomila.jpeg" alt="Creme Corporal Camomila" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                   <h3>Creme Corporal Camomila</h3>
@@ -91,7 +92,7 @@
               <!-- Repete para ter scroll suficiente -->
               <div class="product-card">
                 <div class="product-image">
-                  <img src="IMG/creme corporal_lavanda.jpeg" alt="Creme Corporal Lavanda" class="product-img">
+                  <img src="IMG/creme corporal_lavanda.jpeg" alt="Creme Corporal Lavanda" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                   <h3>Creme Corporal Lavanda</h3>
@@ -100,23 +101,146 @@
               </div>
               <div class="product-card">
                 <div class="product-image">
-                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 6" class="product-img">
+                  <img src="IMG/FRASCO_SERUM.png" alt="Produto 6" class="product-img" loading="lazy">
                 </div>
                 <div class="product-info">
                   <h3>Produto 6</h3>
                   <p>R$ 39,00</p>
                 </div>
-              </div>
-              
+              </div>              
             </div>
           </div>
           <button class="carousel__btn next" aria-label="Próximo">›</button>
         </div>
       </section>
+     
+        <article class="cards-produtos"> 
+          <h2 class="main__title">Produtos</h2>
+          <div class="conjunto-cards">
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/sabonete liquido_ menta e eucalipto.jpeg" alt="Sabonete Menta" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Sabonete Menta</h3>
+                <p>R$ 24,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/sabonete liquido_ msaracuja e camomila.jpeg" alt="Sabonete Maracujá" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Sabonete Maracujá</h3>
+                <p>R$ 25,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/creme corporal_camomila.jpeg" alt="Creme Camomila" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Creme Camomila</h3>
+                <p>R$ 32,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/creme corporal_lavanda.jpeg" alt="Creme Lavanda" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Creme Lavanda</h3>
+                <p>R$ 33,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/hidratante_acai e gengibre.jpeg" alt="Hidratante Açaí" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Hidratante Açaí</h3>
+                <p>R$ 28,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/FRASCO_SERUM.png" alt="Sérum" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Sérum</h3>
+                <p>R$ 39,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/creme corporal_camomila.jpeg" alt="Hidratante Camomila" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Hidratante Camomila</h3>
+                <p>R$ 29,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/creme corporal_lavanda.jpeg" alt="Hidratante Lavanda" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Hidratante Lavanda</h3>
+                <p>R$ 30,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/sabonete liquido_ menta e eucalipto.jpeg" alt="Sabonete Variedade" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Sabonete Variedade</h3>
+                <p>R$ 22,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/FRASCO_SERUM.png" alt="Loção Corporal" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Loção Corporal</h3>
+                <p>R$ 24,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/hidratante_acai e gengibre.jpeg" alt="Hidratante Tropical" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Hidratante Tropical</h3>
+                <p>R$ 34,00</p>
+              </div>
+            </div>
+
+            <div class="grid-card">
+              <div class="grid-card__image">
+                <img src="IMG/creme corporal_camomila.jpeg" alt="Creme Deluxe" class="grid-card__img" loading="lazy">
+              </div>
+              <div class="grid-card__info">
+                <h3>Creme Deluxe</h3>
+                <p>R$ 45,00</p>
+              </div>
+            </div>
+          </div>
+
+        </article>
     </main>
-    <footer class="footer">
-      <p class="footer__text">&copy; 2025 Projeto Santo Amaro</p>
-    </footer>
+  
     <script src="JAVASCRIPT/script.js"></script>
   </body>
 </html>
